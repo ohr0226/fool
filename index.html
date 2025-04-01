@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>송금보내요</title>
+
+  <!-- OG 태그 (카톡 공유용) -->
+  <meta property="og:title" content="송금보내요">
+  <meta property="og:description" content="1,000,000원을 보냈어요. 송금 받기 전까진 취소할 수 있어요.">
+  <meta property="og:image" content="https://yourdomain.com/assets/og-image.png">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #dbe5f1;
+      font-family: sans-serif;
+    }
+
+    .card {
+      max-width: 320px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      position: relative;
+      background: #ffe300;
+      padding: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      height: 100px;
+    }
+
+    .card-header img {
+      position: absolute;
+      right: 20px;
+      bottom: -10px;
+      width: auto;
+      height: 100px;
+    }
+
+    .card-header h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card-body p {
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      background: #f5f5f5;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .footer {
+      border-top: 1px solid #eee;
+      padding: 15px 20px;
+      font-size: 14px;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer img {
+      height: 18px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="card">
+  <div class="card-header">
+    <img src="./img/kakao-cat.png" alt="라이언">
+    <h2>송금보내요</h2>
+  </div>
+  <div class="card-body">
+    <strong>1,000,000원을 보냈어요.</strong>
+    <p>송금 받기 전까지 보낸 분은 내역 상세화면에서 취소할 수 있어요.</p>
+    <button class="button" onclick="window.location.href='prank.html'">송금 받기</button>
+  </div>
+  <div class="footer">
+    <img src="./img/kakao-logo.png" alt="카카오페이">
+    <span>카카오페이</span>
+  </div>
+</div>
+</body>
+
+</html>
